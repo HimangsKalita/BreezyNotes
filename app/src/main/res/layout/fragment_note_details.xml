@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/llNoteHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/todo_detais_header"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/llTvNoteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Note"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/llTvNoteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tuesday, 30 October, 2024"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/llEtNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tellus in diam egestas aliquam. Morbi non tortor lobortis, congue diam at, viverra nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Fusce odio orci, lobortis non aliquam non, pulvinar quis metus. In fermentum metus semper nisi congue, nec lobortis libero posuere. Nulla efficitur fringilla sollicitudin. Aliquam efficitur viverra erat, non lacinia eros pulvinar vitae."
+        android:textSize="17dp"
+        android:textColor="@color/blackText"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNoteHeading"
+        android:gravity="start|top"
+        android:background="@android:color/transparent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clNoteItem"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@drawable/todo_background"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/noteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="My Note"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noteDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Tuesday, 25 June, 2024"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteTitle" />
+
+    <TextView
+        android:id="@+id/noteContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec fringilla sem. Duis dictum eget metus a eleifend. Sed at sagittis mi. Nullam pellentesque convallis turpis, ullamcorper consectetur enim semper ac. Pellentesque tempor justo nulla, sed semper risus elementum a. Proin ut diam facilisis, rutrum diam quis, ornare mi. Nunc auctor velit eget euismod placerat. Pellentesque luctus a ex sit amet eleifend. Nunc quis nulla et dui efficitur egestas. Sed tortor sem, rutrum ac risus ac, sodales viverra elit. Morbi placerat ex sed dui facilisis, in facilisis ante dignissim."
+        android:textColor="@color/blackText"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
